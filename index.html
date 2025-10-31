@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus Mode Dashboard</title>
-  <link rel="stylesheet" href="web.css"/>
+  <title>FocCess Dashboard</title>
+  <link rel="stylesheet" href="web.css">
 </head>
 <body>
   <div class="container">
-    <h1>Website Blocker Dashboard</h1>
+    <h1>FocCess Productivity Dashboard</h1>
+
+    <h2>Status</h2>
     <p id="status">Loading...</p>
+    <button id="toggleBtn">Toggle Blocking</button>
 
-    <button id="toggleBtn">Toggle Blocker</button>
+    <h2>Blocked Websites</h2>
+    <ul id="siteList"></ul>
 
-    <div class="settings">
-      <h2>Blocked Websites</h2>
-      <ul id="siteList"></ul>
-
-      <input type="text" id="newSite" placeholder="Add new website">
+    <div class="input-section">
+      <input type="text" id="newSite" placeholder="Add new website (e.g. facebook.com)">
       <button id="addBtn">Add</button>
-
-      <h3>Working Hours</h3>
-      <input type="time" id="startTime">
-      <input type="time" id="endTime">
-      <button id="saveBtn">Save Hours</button>
     </div>
+
+    <h2>Working Hours</h2>
+    <div class="time-inputs">
+      <label>Start:</label>
+      <input type="time" id="startTime">
+      <label>End:</label>
+      <input type="time" id="endTime">
+      <button id="saveBtn">Save</button>
+    </div>
+
+    <footer>Stay focused, stay productive 💪</footer>
   </div>
 
   <script src="web.js"></script>
