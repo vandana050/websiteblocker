@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Mode Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Website Blocker Dashboard</h1>
+    <p id="status">Loading...</p>
+
+    <button id="toggleBtn">Toggle Blocker</button>
+
+    <div class="settings">
+      <h2>Blocked Websites</h2>
+      <ul id="siteList"></ul>
+
+      <input type="text" id="newSite" placeholder="Add new website">
+      <button id="addBtn">Add</button>
+
+      <h3>Working Hours</h3>
+      <input type="time" id="startTime">
+      <input type="time" id="endTime">
+      <button id="saveBtn">Save Hours</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
